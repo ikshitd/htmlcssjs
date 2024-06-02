@@ -1,0 +1,43 @@
+<DOCTYPE html> 
+  <html> 
+    <head>
+      <title> images with table </title>
+      <style> 
+        img { 
+         max-width: 100%;
+         height: 100px;
+         width: 500px;
+        }
+        td {
+          height: 100px;
+          width: 100px;
+        }
+        table, td{
+          border-collapse: collapse; 
+          margin: 0px;  
+          padding: 0px;
+        }
+      </style>
+    </head> 
+    <body>
+      <table> 
+        <tr>
+          <td><img src = "./a/a.jpg"></td>
+          <td><img src = "./b/b.jpg"></td>
+          <td><img src = "./a/a.jpg"></td>
+          <td><img src = "./b/b.jpg"></td>
+        </tr>
+        <tr>
+          <td><img src = "./b/b.jpg"></td>
+          <td colspan = "2"><img src = "./a/a.jpg"></td>
+          <td><img src = "./b/b.jpg"></td>
+        </tr>
+        <tr>
+          <td colspan = "2"><img src = "./a/a.jpg"></td>
+          <td><img src = "./b/b.jpg"></td>
+          <td><img src = "./a/a.jpg"></td>
+        </tr>
+      </table>
+    </body> 
+  </html>
+</DOCTYPE>

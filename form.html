@@ -1,0 +1,35 @@
+<DOCTYPE html> 
+<html>
+  <head>
+    <title> input form </title>
+  </head>
+  <body>
+    <form action = "/" method = "GET">
+      <fieldset>
+        <legend>Basic Information</legend>
+        <label for = "name"> Full Name: </label>
+        <input name = "name" id = "name" type = "text"> <br>
+        <label for = "dob"> Date of Birth: </label>
+        <input id = "dob" type = "date"> <br>
+        <label for = "gender"> Gender </label>
+        <input name = "gender" id = "male" type = "radio" /> <label for = "male"> Male </label>
+        <input name = "gender" id = "female" type = "radio" /> <label for = "female"> Female </label> <br>
+        <label for = "address"> address </label> 
+        <input name = "adress" id = "address" /> <br>
+        <label for = "phone"> Phone number </label>
+        <input id = "phone" type = "tel"> 
+      </fieldset>
+      <fieldset>
+        <legend> Extra Information </legend>
+        <label for = "interests"> Interests </label>
+        <input name = "interests" id = "books" type = "checkbox" /> <label for = "books"> books </label>
+        <input name = "interests" id = "basketball" type = "checkbox" /> <label for = "basketball"> basketball </label>
+        <input name = "interests" id = "rock" type = "checkbox" /> <label for = "rock"> rock </label> <br>
+        <label for = "color"> Favorite Color </label>
+        <input name = "color" id = "color" type = "color" />
+      </fieldset>
+      <button> send data </button>
+      <button> reset form </button>
+    </form>
+  </body>
+</html>

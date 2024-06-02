@@ -1,0 +1,25 @@
+<DOCTYPE html> 
+<html> 
+  <head>
+    <title> This is the message on the title bar </title>
+  </head>
+  <body onload = "scrollText('scrolling text', 200)"> 
+    <script> 
+      let scrollPos = 0; 
+      let blanks = ""; 
+      let maxScroll = 100; 
+      function scrollText(text, milliseconds) {
+        window.setInterval(displayText(text), milliseconds)
+      }
+      function displayText(text) {
+        window.defaultStatus = blanks + text; 
+        ++scrollPos; 
+        blanks += " "; 
+        if (scrollPos > maxScroll) {
+          scrollPos = 0; 
+          blanks = ""; 
+        }
+      }
+    </script>
+  </body>
+</html>

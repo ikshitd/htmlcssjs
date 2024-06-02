@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="color: red" id="error"></div>
+    <form id="form" action="/">
+      <div>
+        <label for="card-type"> Card-type: </label>
+        <input id="card-type" name="card-type" list="cards" />
+        <datalist id="cards">
+          <option value="master-card"></option>
+          <option value="visa"></option>
+          <option value="american-express"></option>
+        </datalist>
+      </div>
+      <div>
+        <label for="card-number"> Card-number: </label>
+        <input id="card-number" name="card-number" type="text" />
+      </div>
+      <button type="submit">submit</button>
+    </form>
+    <script src="credit_card.js"></script>
+  </body>
+</html>

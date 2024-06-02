@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="dob"> Date of birth </label>
+    <input id="dob" type="date" />
+    <div class="container"></div>
+    <button>submit</button>
+    <script>
+      const days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ];
+      const container = document.querySelector(".container");
+      const dob = document.querySelector("#dob");
+      const buttonElement = document.querySelector("button");
+      buttonElement.addEventListener("click", () => {
+        if (dob.value === "" || dob.value == null) {
+          throw new Error("Please select some date first !!");
+        } else {
+          const date = new Date(dob.value);
+          container.innerHTML = `<h1>${days[date.getDay()]}</h1>`;
+        }
+      });
+    </script>
+  </body>
+</html>

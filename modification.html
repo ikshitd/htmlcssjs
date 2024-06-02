@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container"></div>
+    <script>
+      let counter = 0;
+      const container = document.querySelector(".container");
+      function incrementCounter() {
+        setTimeout(() => {
+          container.innerHTML = `<h1>${counter}</h1>`;
+          counter++;
+          incrementCounter();
+        }, 1000);
+      }
+      incrementCounter();
+    </script>
+  </body>
+</html>
