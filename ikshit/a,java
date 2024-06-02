@@ -1,0 +1,7 @@
+public class A {
+  public static void main() {
+    int answer = 0; 
+    system.out.println("how are you todya ? The value of the answer is: ", answer); 
+    return 0; 
+  }
+}
